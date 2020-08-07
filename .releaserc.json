@@ -88,7 +88,7 @@
           "types": [
             {
               "type": "feat",
-              "section": "Features 🎇",
+              "section": "Features 🎇🎨",
               "hidden": false
             },
             {
@@ -99,7 +99,7 @@
             {
               "type": "chore",
               "section": "Chores 🧹",
-              "hidden": false
+              "hidden": true
             },
             {
               "type": "docs",
@@ -117,6 +117,7 @@
             },
             {
               "type": "perf",
+              "section": "Performance Improvements 🚄"
               "hidden": false
             },
             {
@@ -135,9 +136,7 @@
       }
     ],
     [
-      "@semantic-release/npm", {
-        "pkgRoot": "dist"
-      }
+      "@semantic-release/npm"
     ],
     [
       "@semantic-release/github"

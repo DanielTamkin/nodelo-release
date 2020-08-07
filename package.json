@@ -1,18 +1,25 @@
 {
   "name": "repo-name",
-  "version": "0.0.1",
+  "version": "0.0.0--development",
   "description": "<description>",
-  "main": "dist/index.js",
+  "main": "index.js",
+  "folder": "dist",
   "scripts": {
-    "start": "yarn build && yarn serve",
-    "build": "./node_modules/.bin/babel src -d dist",
+    "start": "npm build && npm serve",
+    "copyscript": ".github/script-copy.sh",
+    "build": "npm run copyscript && ./node_modules/.bin/babel src -d dist",
     "watch": "nodemon --watch src --exec yarn start",
+    "version": "npm run copyscript",
     "lint": "exit 0",
+    "test": "exit 0",
     "serve": "node dist/index"
   },
   "repository": {
     "type": "git",
-    "url": "<repo>"
+    "url": "https://github.com/DanielTamkin/nodelo-template"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "author": "<you>",
   "license": "AGPL-3.0-or-later",
