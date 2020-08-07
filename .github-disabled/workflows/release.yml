@@ -1,0 +1,30 @@
+name: Release
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+      - next
+      - beta
+      - "*.x" # maintenance releases
+
+jobs:
+  release:
+    if: (
+      !contains(github.event.commits[0].message, '[no ci]') &&
+      startsWith(github.event.commits[0].message, 'feat') ||
+      startsWith(github.event.commits[0].message, 'fix') ||
+      startsWith(github.event.commits[0].message, 'perf'))
+    name: release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - run: npm ci
+      - run: npm run build --if-present
+      - run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
