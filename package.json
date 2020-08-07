@@ -22,7 +22,7 @@
     "access": "public"
   },
   "author": "<you>",
-  "license": "AGPL-3.0-or-later",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/<repo>/issues"
   },
