@@ -1,40 +1,57 @@
-# Nodelo ⚙
+# Nodelo-release
 
-A play on words from Nodelo's cousin, [Modelo](https://github.com/tundradawn/modelo) by @tundradawn.
-Intended as a general purpose low-level template to get ES6 running quick and easy.
-If you don't need all the bells and whistles, this template might be for you. 
+<!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
+![GitHub repo size](https://img.shields.io/github/repo-size/danieltamkin/nodelo-release)
+![GitHub contributors](https://img.shields.io/github/contributors/danieltamkin/nodelo-release)
+![GitHub stars](https://img.shields.io/github/stars/danieltamkin/nodelo-release?style=social)
+![Twitter Follow](https://img.shields.io/twitter/follow/CodeHands?style=social)
 
-# Contents
-#### `babel.rc`
-- Targets: `node: 'current'`.
+Nodelo-template is a `template` that allows `everyone` to quickly `release nodejs modules`.
 
-**Plugins:**
-- [@babel/plugin-transform-classes](https://babeljs.io/docs/en/babel-plugin-transform-classes)
- - default: `loose:false`
-- [@babel/plugin-proposal-class-properties](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties)
- - _default_: `loose:false`
-- [@babel/plugin-transform-runtime](https://babeljs.io/docs/en/babel-plugin-transform-runtime)
- - _default_: `corejs: 3`, `regenerator: true`
+Semantic-release will run your NPM releases, github actions are your CI & CD platform. 
 
-### Everything from [Modelo](https://github.com/tundradawn/modelo):
+## Prerequisites
 
-##### `.gitignore`
-- ignores node elements, common UNIX elements such as `.DS_Store` and more.
+Before you begin, ensure you have met the following requirements:
+<!--- These are just example requirements. Add, duplicate or remove as required --->
+* You have installed the latest version of `<coding_language/dependency/requirement_1>`
+* You have a `<Windows/Linux/Mac>` machine. State which OS is supported/which is not.
+* You have read `<guide/link/documentation_related_to_project>`.
 
-##### `.editorconfig`
-- ensure spacing and other fine factors of the coding life are consistant acrosses not only IDE's but also OS enviroments.
+## Installing Nodelo-release
 
-##### `.eslintrc.js`
-- Contains common eslint rules with a small selection of simple ignores to aid in fast building of repos.
-- Uses the Airbnb ruleset thanks to the suggestion from @jadnco
+To install Nodelo-release:
 
-##### `.gitattributes`
-- Forces all binary and text files to follow consistant line ending rules, as some team members work with Windows and others Mac.
+Click on the "Use this template" button at the top of the repo.
 
-# Base Licence `AGPL-3.0-or-later`
-Why did i choose this licence? For this specific line right here:
-> When a modified version is used to provide a service over a network, the complete source code of the modified version must be made available.
+## Using Nodelo-release
 
-_Found on [choosealicence.com](https://choosealicense.com/licenses/);_
+To use Nodelo-release, follow these steps:
+1. Insert your NPM_TOKEN into secrets.  - about secrets
+1. Move `./actions/` to `./github/workflows` - about actions
+**Optional**
+- Install [semantic-pull-request](https://github.com/apps/semantic-pull-requests) to make sure all PR's follow semantic-versioning.
+- Install [commitizen](https://github.com/commitizen/cz-cli) to help format your commit messages.
 
-This seems to be a good all around licence to ensure all parties are getting the same access to Opensource Software software..
+
+## Contributing to Nodelo-release
+
+This is a template to get you started, nothing here should constrain you from doing what you want to do! If you find something that you think other people might find useful 
+
+[Create a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) if you feel others will benefit from it.
+
+## Contributors
+
+Thanks to the following people who have contributed to this project:
+
+* [@danieltamkin](https://github.com/danieltamkin) 🖋 
+* [@gr2m](https://github.com/gr2m) 🔧 (For assisting in bumps while learning semantic-release)
+* [@zeke](https://github.com/zeke) 📖 ([Their tutorial](https://github.com/zeke/semantic-release-with-github-actions) helped me learn how to use semantic-release in GitHub actions).
+
+
+You might want to consider using something like the [All Contributors](https://github.com/all-contributors/all-contributors) specification and its [emoji key](https://allcontributors.org/docs/en/emoji-key).
+
+
+## License
+
+This project uses: [MIT](https://choosealicense.com/licenses/mit/).
