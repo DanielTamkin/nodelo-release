@@ -17,8 +17,10 @@ Click on the "Use this template" button at the top of the repo.
 ## Using Nodelo-release
 
 To use Nodelo-release, follow these steps:
-1. Insert your NPM_TOKEN into secrets.  - about secrets
-1. Move `.github-disabled` to `./github/` - about actions
+1. Insert your NPM_TOKEN into secrets.  - [about secrets](https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets)
+1. Move `.github-disabled` to `./github/` - [about actions](https://docs.github.com/en/actions)
+
+
 **Optional**
 - Install [semantic-pull-request](https://github.com/apps/semantic-pull-requests) to make sure all PR's follow semantic-versioning.
 - Install [commitizen](https://github.com/commitizen/cz-cli) to help format your commit messages.
