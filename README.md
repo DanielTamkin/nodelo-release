@@ -34,12 +34,9 @@ This is a template to get you started, nothing here should constrain you from do
 
 Thanks to the following people who have contributed to this project:
 
-* [@danieltamkin](https://github.com/DanielTamkin) 🖋 
+* [@DanielTamkin](https://github.com/DanielTamkin) 🖋 
 * [@gr2m](https://github.com/gr2m) 🔧 (For assisting in bumps while learning semantic-release)
 * [@zeke](https://github.com/zeke) 📖 ([Their tutorial](https://github.com/zeke/semantic-release-with-github-actions) helped me learn how to use semantic-release in GitHub actions).
-
-
-You might want to consider using something like the [All Contributors](https://github.com/all-contributors/all-contributors) specification and its [emoji key](https://allcontributors.org/docs/en/emoji-key).
 
 
 ## License
