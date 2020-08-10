@@ -10,9 +10,9 @@
   description: "Part of a release"
   color: "a22eef"
 # Bots
-- name: "maintence"
+- name: "maintenance"
   color: "0075ca"
-  description: "Generated fixes by bots"
+  description: "Generated dependabot fixes"
 - name: "semantic-release"
   description: "Semantic-release bot notifying on build failures"
   color: "a22eef"
