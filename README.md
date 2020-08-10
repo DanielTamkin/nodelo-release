@@ -20,11 +20,10 @@ To use Nodelo-release, follow these steps:
 1. Insert your NPM_TOKEN into secrets.  - [about secrets](https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets)
 1. Move `.github-disabled` to `./github/` - [about actions](https://docs.github.com/en/actions)
 
-
 **Optional**
 - Install [semantic-pull-request](https://github.com/apps/semantic-pull-requests) to make sure all PR's follow semantic-versioning.
 - Install [commitizen](https://github.com/commitizen/cz-cli) to help format your commit messages.
-
+- Only allow 'squash merging' from settings. ![image](https://user-images.githubusercontent.com/9532762/89750815-255b2780-da93-11ea-8d20-8b42100d2a0b.png)
 
 ## Contributing to Nodelo-release
 
