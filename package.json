@@ -2,6 +2,7 @@
   "name": "repo-name",
   "version": "0.0.0--development",
   "description": "<description>",
+  "author": "<you>",
   "main": "index.js",
   "folder": "dist",
   "scripts": {
@@ -14,6 +15,24 @@
     "test": "exit 0",
     "serve": "node dist/index"
   },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg",
+        {
+          "exclude": [
+            "__tests__/**/*"
+          ]
+        }
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ]
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/DanielTamkin/nodelo-template"
@@ -21,7 +40,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "author": "<you>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/<repo>/issues"
