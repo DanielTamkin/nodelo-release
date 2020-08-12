@@ -36,6 +36,18 @@
             "release": false
           }
         ],
+        "parserOpts": {
+          "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
+        }
+      }
+    ],
+    [
+      "@semantic-release/release-notes-generator",
+      {
+        "preset": "conventionalcommits",
+        "writerOpts": {
+          "commitsSort": ["subject", "scope"]
+        },
         "presetConfig": {
           "types": [
             {
@@ -50,12 +62,10 @@
             },
             {
               "type": "chore",
-              "section": "Chores 🧹",
               "hidden": false
             },
             {
               "type": "docs",
-              "section": "Documentation 📚",
               "hidden": false
             },
             {
@@ -69,55 +79,6 @@
             },
             {
               "type": "perf",
-              "hidden": false
-            },
-            {
-              "type": "test",
-              "section": "Unit Tests 🧪",
-              "hidden": false
-            }
-          ]
-        }
-      }
-    ],
-    [
-      "@semantic-release/release-notes-generator",
-      {
-        "preset": "conventionalcommits",
-        "presetConfig": {
-          "types": [
-            {
-              "type": "feat",
-              "section": "Features 🎇🎨",
-              "hidden": false
-            },
-            {
-              "type": "fix",
-              "section": "Bug Fixes 🐛",
-              "hidden": false
-            },
-            {
-              "type": "chore",
-              "section": "Chores 🧹",
-              "hidden": true
-            },
-            {
-              "type": "docs",
-              "section": "Documentation 📚",
-              "hidden": false
-            },
-            {
-              "type": "style",
-              "hidden": false
-            },
-            {
-              "type": "refactor",
-              "section": "Refactor 🏗",
-              "hidden": false
-            },
-            {
-              "type": "perf",
-              "section": "Performance Improvements 🚄"
               "hidden": false
             },
             {
@@ -132,18 +93,28 @@
     [
       "@semantic-release/changelog",
       {
-        "changelogTitle": "Changes 💾 ✨"
+        "changelogTitle": "# Changes 💾 ✨"
       }
     ],
     [
-      "@semantic-release/npm"
+      "@semantic-release/npm",
+      {
+        "pkgRoot": "./pkg"
+      }
     ],
     [
       "@semantic-release/github"
     ],
     "@semantic-release/git",
     [
-      "semantic-release-plugin-update-version-in-files"
+      "semantic-release-plugin-update-version-in-files",
+      {
+        "files": [
+          "pkg/dist-web/*",
+          "pkg/dist-node/*",
+          "pkg/*/version.*"
+        ]
+      }
     ]
   ]
 }
