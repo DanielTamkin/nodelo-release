@@ -8,8 +8,8 @@
   "scripts": {
     "semantic-release": "./node_modules/.bin/semantic-release",
     "start": "npm build && npm serve",
-    "build": "./copy-package.sh && ./node_modules/.bin/babel src -d dist",
-    "version": "./copy-package.sh",
+    "build": "./script-copy.sh && ./node_modules/.bin/babel src -d dist",
+    "version": "./script-copy.sh",
     "watch": "nodemon --watch src --exec yarn start",
     "lint": "exit 0",
     "test": "exit 0",
