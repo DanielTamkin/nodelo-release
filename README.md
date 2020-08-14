@@ -8,7 +8,9 @@
 
 Nodelo-template is a `template` that allows `everyone` to quickly `release nodejs modules`.
 
-Semantic-release will run your NPM releases, github actions are your CI & CD platform. 
+Uses [semantic-release](https://semantic-release.gitbook.io/semantic-release/) to automate your NPM releases with the help of [github actions](https://github.com/features/actions) as your CI & CD platform.
+
+_Note:_ [`yarn`](https://classic.yarnpkg.com/en/) is the default package manager, you can easily change to [NPM](https://www.npmjs.com/) by removing `yarn-lock.json`, then building the `package-lock.json` file with `npm install`. Next change the mentions of yarn with npm in both the Action workflow & package scripts.
 
 ## Getting started with Nodelo-release
 
