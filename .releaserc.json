@@ -97,24 +97,14 @@
       }
     ],
     [
-      "@semantic-release/npm",
-      {
-        "pkgRoot": "./pkg"
-      }
+      "@semantic-release/npm"
     ],
     [
       "@semantic-release/github"
     ],
     "@semantic-release/git",
     [
-      "semantic-release-plugin-update-version-in-files",
-      {
-        "files": [
-          "pkg/dist-web/*",
-          "pkg/dist-node/*",
-          "pkg/*/version.*"
-        ]
-      }
+      "semantic-release-plugin-update-version-in-files"
     ]
   ]
 }
