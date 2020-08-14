@@ -8,23 +8,23 @@
 
 Nodelo-template is a `template` that allows `everyone` to quickly `release nodejs modules`.
 
-Semantic-release will run your NPM releases, github actions are your CI & CD platform. 
+Uses [semantic-release](https://semantic-release.gitbook.io/semantic-release/) to automate your NPM releases with the help of [github actions](https://github.com/features/actions) as your CI & CD platform.
+
+_Note:_ [`yarn`](https://classic.yarnpkg.com/en/) is the default package manager, you can easily change to [NPM](https://www.npmjs.com/) by removing `yarn-lock.json`, then building the `package-lock.json` file with `npm install`. Next change the mentions of yarn with npm in both the Action workflow & package scripts.
 
 ## Getting started with Nodelo-release
 
-Click on the "Use this template" button at the top of the repo.
-
-## Using Nodelo-release
-
+- [ ] Click on the "Use this template" button at the top of the repo.
 To use Nodelo-release, follow these steps:
-1. Insert your NPM_TOKEN into secrets.  - [about secrets](https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets)
-1. Move `.github-disabled` to `./github/` - [about actions](https://docs.github.com/en/actions)
+- [ ] Create your NPM Token  - [Learn about NPM Tokens](https://docs.npmjs.com/about-authentication-tokens).  ![GitHub secrets screenshot](https://user-images.githubusercontent.com/9532762/90075684-9f71f300-dcc3-11ea-8238-56d4b8f17a24.png) Then, create a new secret named `NPM_TOKEN` - [About secrets](https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets)
+
+- [ ] Move `.github-disabled` to `./github/` - [About actions](https://docs.github.com/en/actions)
 
 **Optional** _These are just suggestions_
-- Install [semantic-pull-request](https://github.com/apps/semantic-pull-requests) to make sure all PR's follow semantic-versioning.
-- Install [commitizen](https://github.com/commitizen/cz-cli) to help format your commit messages.
-- Only allow 'squash merging' from settings. ![image](https://user-images.githubusercontent.com/9532762/89750815-255b2780-da93-11ea-8d20-8b42100d2a0b.png)
-- Use @scottydocs [README-template](https://github.com/scottydocs/README-template.md), it's a good starting point for making simple informative README's.
+- [ ] Install [semantic-pull-request](https://github.com/apps/semantic-pull-requests) (A GitHub App) to make sure all PR's follow semantic-versioning.
+- [ ] Install [commitizen](https://github.com/commitizen/cz-cli) (A CLI plugin) to help format your commit messages.
+- [ ] Only allow 'squash merging' from settings. ![image](https://user-images.githubusercontent.com/9532762/89750815-255b2780-da93-11ea-8d20-8b42100d2a0b.png)
+- [ ] Use @scottydocs [README-template](https://github.com/scottydocs/README-template.md), it's a good starting point for making simple informative README's.
 ## Contributing to Nodelo-release
 
 This is a template to get you started, nothing here should constrain you from doing what you want to do! If you find something that you think other people might find useful 
